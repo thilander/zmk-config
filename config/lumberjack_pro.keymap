@@ -63,7 +63,7 @@
         swe_layer {
             bindings = <
                 &trans       &trans       &trans       &trans       &trans       &trans                    &trans     &trans     &trans     &trans     &trans    &trans
-                &trans       &trans       &trans       &trans       &trans       &trans                    &trans     &trans     &trans     &trans     &trans    &trans
+                &trans       &trans       &trans       &trans       &trans       &trans                    &trans     &trans     &trans     &trans     &trans    &uc_aring
                 &trans       &trans       &trans       &trans       &trans       &trans                    &trans     &trans     &trans     &trans     &trans    &trans
                 &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans     &trans     &trans     &trans     &trans    &trans
                 &trans       &trans       &trans       &trans       &trans       &trans                    &trans     &trans     &trans     &trans     &trans    &trans
