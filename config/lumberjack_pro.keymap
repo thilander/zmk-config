@@ -23,7 +23,14 @@
 
  / {
     behaviors {
-        
+        uc_aring: uc_aring {
+            compatible = "zmk,behavior-mod-morph";
+            label = "Å_OR_å";
+            #binding-cells = <0>;
+            bindings = <&sk 0x00E5>,  /* å */
+                       <&sk 0x00C5>;  /* Å */
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
  };
 
