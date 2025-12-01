@@ -35,7 +35,12 @@
          mac_aring_upper: mac_aring_upper {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mac_press LALT>, <&mac_press LS(A)>, <&mac_release LALT>, <&mac_release LS(A)>;
+            bindings
+                = <&macro_press &kp LALT>
+                ,<&macro_press &kp LS(A)>
+                ,<&macro_release &kp LALT>
+                ,<&mac_release &kp LS(A)>
+                ;
         };
     };
  };
