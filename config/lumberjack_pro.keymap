@@ -31,17 +31,6 @@
                        <&sk 0x00C5>;  /* Å */
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-
-         mac_aring_upper: mac_aring_upper {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LALT>
-                ,<&macro_press &kp LS(A)>
-                ,<&macro_release &kp LALT>
-                ,<&mac_release &kp LS(A)>
-                ;
-        };
     };
  };
 
@@ -74,7 +63,7 @@
         swe_layer {
             bindings = <
                 &trans       &trans       &trans       &trans       &trans       &trans                    &trans     &trans     &trans     &trans     &trans    &trans
-                &trans       &trans       &trans       &trans       &trans       &trans                    &trans     &trans     &trans     &trans     &trans    &mac_aring_upper
+                &trans       &trans       &trans       &trans       &trans       &trans                    &trans     &trans     &trans     &trans     &trans    &trans
                 &trans       &trans       &trans       &trans       &trans       &trans                    &trans     &trans     &trans     &trans     &trans    &trans
                 &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans     &trans     &trans     &trans     &trans    &trans
                 &trans       &trans       &trans       &trans       &trans       &trans                    &trans     &trans     &trans     &trans     &trans    &trans
