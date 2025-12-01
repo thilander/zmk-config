@@ -21,31 +21,6 @@
  };
  &encoder { status = "okay"; };
 
- / {
-    behaviors {
-        // Macro for Å/å
-        mac_aring: mac_aring {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&mac_aring_sequence>;
-        };
-       
-        // Macro for Ä/ä
-        mac_adia: mac_adia {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&mac_adia_sequence>;
-        };
-
-        // Macro for Ö/ö
-        mac_odia: mac_odia {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&mac_odia_sequence>;
-        };
-    };
-};
-
 / {
     keymap {
         compatible = "zmk,keymap";
