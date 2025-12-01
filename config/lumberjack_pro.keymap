@@ -21,6 +21,12 @@
  };
  &encoder { status = "okay"; };
 
+ / {
+    behaviors {
+        
+    };
+ };
+
 / {
     keymap {
         compatible = "zmk,keymap";
