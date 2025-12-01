@@ -21,35 +21,6 @@
  };
  &encoder { status = "okay"; };
 
- & behaviors {
-        uc_aring: uc_aring {
-            compatible = "zmk,behavior-mod-morph";
-            label = "Å_OR_å";
-            #binding-cells = <0>;
-            bindings = <&uc 0x00E5>,  /* å */
-                       <&uc 0x00C5>;  /* Å */
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        uc_adia: uc_adia {
-            compatible = "zmk,behavior-mod-morph";
-            label = "Ä_OR_ä";
-            #binding-cells = <0>;
-            bindings = <&uc 0x00E4>,  /* ä */
-                       <&uc 0x00C4>;  /* Ä */
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        uc_odia: uc_odia {
-            compatible = "zmk,behavior-mod-morph";
-            label = "Ö_OR_ö";
-            #binding-cells = <0>;
-            bindings = <&uc 0x00F6>,  /* ö */
-                       <&uc 0x00D6>;  /* Ö */
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-    };
-
 / {
     keymap {
         compatible = "zmk,keymap";
