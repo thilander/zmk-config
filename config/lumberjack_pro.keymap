@@ -16,7 +16,7 @@
 #define LOWER 2
 #define ADJUST 3
 #define SWE 4
-#defined CODE 5
+#define CODE 5
 
 /* Uncomment to enable the encoder */
  &sensors {
