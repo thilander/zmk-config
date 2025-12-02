@@ -74,7 +74,7 @@
                 &trans       &trans         &trans         &trans         &trans   &trans             &trans   &trans      &kp KP_N0  &trans      &trans    &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp UP DOWN>;
+            sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
         };
 
         adjust_layer {
