@@ -61,6 +61,8 @@
                 &trans       &trans         &trans         &trans         &trans   &trans    &trans   &trans   &kp PG_UP   &trans     &kp PG_DN   &trans    &trans
                 &trans       &trans         &trans         &trans         &trans   &trans             &trans   &trans      &kp DEL    &trans      &trans    &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
 
         lower_layer {
