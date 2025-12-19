@@ -47,7 +47,7 @@
                 &kp TAB        &kp Q        &kp W       &kp E     &kp R      &kp T                       &kp Y          &kp U       &kp I       &kp O       &kp P       &kp EQUAL
                 &kp GRAVE      &kp A        &kp S       &kp D     &kp F      &kp G                       &kp H          &kp J       &kp K       &kp L       &kp SEMI    &kp SQT
                 &kp LSHFT      &kp Z        &kp X       &kp C     &kp V      &kp B          &kp C_MUTE   &kp N          &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp RET
-                &kp LCTRL      &kp LALT     &kp LGUI    &kp LBKT  &mo LOWER  &kp SPACE                   &kp SPACE      &mo RAISE   &kp RBKT    &kp MINUS   &tog SWE    &kp BSLH
+                &kp LCTRL      &kp LALT     &kp LGUI    &kp LBKT  &mo LOWER  &kp SPACE                   &kp SPACE      &mo RAISE   &kp RBKT    &kp MINUS   &none       &kp BSLH
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -59,7 +59,7 @@
                 &trans       &trans         &trans         &trans         &trans   &trans             &trans   &kp HOME    &kp UP     &kp END     &trans    &trans
                 &trans       &trans         &trans         &trans         &trans   &trans             &trans   &kp LEFT    &kp DOWN   &kp RIGHT   &trans    &trans
                 &trans       &trans         &trans         &trans         &trans   &trans    &trans   &trans   &kp PG_UP   &trans     &kp PG_DN   &trans    &trans
-                &trans       &trans         &trans         &trans         &trans   &trans             &trans   &trans      &trans     &trans      &trans    &trans
+                &trans       &trans         &trans         &trans         &trans   &trans             &trans   &trans      &trans     &trans      &tog SWE  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
@@ -102,7 +102,7 @@
                 &trans       &trans       &trans       &trans       &trans       &trans                    &trans     &trans     &trans     &trans     &trans          &kp KP_PLUS
                 &trans       &trans       &trans       &trans       &trans       &trans                    &trans     &trans     &trans     &trans     &kp KP_DIVIDE   &kp KP_MINUS
                 &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans     &trans     &trans     &trans     &trans          &trans
-                &trans       &trans       &trans       &trans       &trans       &trans                    &trans     &trans     &trans     &trans     &trans          &trans
+                &trans       &trans       &trans       &trans       &mo LOWER    &trans                    &trans     &trans     &trans     &trans     &trans          &trans
             >;
         };
     };
