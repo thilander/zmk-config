@@ -26,7 +26,15 @@
  &encoder { status = "okay"; };
 
  / {
-    behaviors {};
+    behaviors {
+        mt: mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <175>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+    };
  };
 
 / {
@@ -44,11 +52,11 @@
 
         default_layer {
             bindings = <
-                &kp ESC        &kp N1       &kp N2      &kp N3    &kp N4     &kp N5                      &kp N6         &kp N7      &kp N8      &kp N9        &kp N0        &kp MINUS
-                &kp TAB        &kp Q        &kp W       &kp E     &kp R      &kp T                       &kp Y          &kp U       &kp I       &kp O         &kp P         &kp EQUAL
-                &kp GRAVE      &kp A        &kp S       &kp D     &kp F      &kp G                       &kp H          &kp J       &kp K       &kp L         &kp SEMI      &kp SQT
-                &kp LSHFT      &kp Z        &kp X       &kp C     &kp V      &kp B      &kp LC(LG(F1))   &kp N          &kp M       &kp COMMA   &kp DOT       &kp FSLH      &kp RSHIFT
-                &kp LCTRL      &kp LALT     &kp LGUI    &kp LBKT  &mo LOWER  &kp SPACE                   &kp BSPC       &mo RAISE   &kp RBKT    &kp RET       &kp LG(SPACE) &kp BSLH
+                &kp ESC        &kp N1       &kp N2      &kp N3    &kp N4     &kp N5                      &kp N6         &kp N7      &kp N8      &kp N9      &kp N0        &kp MINUS
+                &kp TAB        &kp Q        &kp W       &kp E     &kp R      &kp T                       &kp Y          &kp U       &kp I       &kp O       &kp P         &kp EQUAL
+                &kp GRAVE      &kp A        &kp S       &kp D     &kp F      &kp G                       &kp H          &kp J       &kp K       &kp L       &kp SEMI      &kp SQT
+                &kp LSHFT      &kp Z        &kp X       &kp C     &kp V      &kp B      &kp LC(LG(F1))   &kp N          &kp M       &kp COMMA   &kp DOT     &kp FSLH      &kp RET
+                &kp LCTRL      &kp LALT     &kp LGUI    &kp LBKT  &mo LOWER  &kp SPACE                   &kp BSPC       &mo RAISE   &kp RBKT    &none       &kp LG(SPACE) &kp BSLH
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
@@ -59,7 +67,7 @@
                 &kp ESC        &kp N1       &kp N2      &kp N3    &kp N4     &kp N5                      &kp N6         &kp N7      &kp N8      &kp N9      &kp N0        &kp MINUS
                 &kp TAB        &kp Q        &kp W       &kp E     &kp R      &kp T                       &kp Y          &kp U       &kp I       &kp O       &kp P         &kp EQUAL
                 &kp GRAVE      &kp A        &kp S       &kp D     &kp F      &kp G                       &kp H          &kp J       &kp K       &kp L       &kp SEMI      &kp SQT
-                &kp LSHFT      &kp Z        &kp X       &kp C     &kp V      &kp B      &kp LC(LG(F1))   &kp N          &kp M       &kp COMMA   &kp DOT     &kp FSLH      &kp RET
+                &kp LSHFT      &kp Z        &kp X       &kp C     &kp V      &kp B      &kp LC(LG(F1))   &kp N          &kp M       &kp COMMA   &kp DOT     &kp FSLH      &mt RSHFT RET
                 &kp LCTRL      &kp LALT     &kp LGUI    &kp LBKT  &mo LOWER  &kp SPACE                   &kp BSPC       &mo RAISE   &kp RBKT    &none       &kp LG(SPACE) &kp BSLH
             >;
 
